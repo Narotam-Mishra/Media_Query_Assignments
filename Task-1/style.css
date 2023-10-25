@@ -1,0 +1,17 @@
+
+.t-header{
+    width: 100%;
+    height: 100px;
+    background: #ccc;
+    font-size: 28px;
+    font-weight: 700;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media screen and (max-width: 599px) {
+    .t-header{
+        background-color: #0000ff;
+    }
+  }

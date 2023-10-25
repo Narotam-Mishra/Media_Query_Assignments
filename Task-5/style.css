@@ -1,0 +1,77 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.container{
+    display: flex;
+}
+
+.Box1{
+    background: #000;
+    color: #fff;
+    font-size: 24px;
+    text-align: center;
+    height: 100vh;
+    flex: 1;
+}
+
+.Box2{
+    color: #fff;
+    font-size: 24px;
+    text-align: center;
+    background: rgba(91, 230, 91, 0.707);
+    flex: 10;
+    width: 90vw;
+    height: 50vh;
+}
+
+.Box3{
+    color: #fff;
+    font-size: 24px;
+    text-align: center;
+    background: rgb(210, 105, 30);
+    flex: 10;
+    width: 90vw;
+    height: 50vh;
+}
+
+.Box4{
+    background: #000;
+    color: #fff;
+    font-size: 24px;
+    text-align: center;
+    flex: 1;
+    height: 100vh;
+}
+
+@media screen and (max-width: 1050px) {
+    .Box2, .Box3{
+        width: 80vw;
+    }
+    .Box1, .Box4{
+        width: 5%;
+    }
+}
+
+/* For Mobile Screen minimum width is 480px */
+@media screen and (max-width: 480px) {
+    .container{
+        position: relative;;
+        display: block;
+        height: 100vh;
+    }
+    .Box1, .Box2, .Box3{
+        width: 100vw;
+        height: 10vh;
+    }
+    .Box4{
+        position: absolute;
+        bottom: 0;
+        height: 10vh;
+        width: 100vw;
+    }
+    
+}

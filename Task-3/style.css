@@ -1,0 +1,29 @@
+
+.navbar-container{
+    background: #000;
+    height: 50px;
+}
+
+.nav-items{
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    color: #fff;
+    font-size: 24px;
+    margin: auto 70px;
+}
+
+.nav-items li{
+    margin-top: 10px;
+}
+
+@media screen and (max-width: 768px) {
+    .nav-items{
+        display: grid;
+        justify-content: center;
+    }
+    .navbar-container{
+        background: #ccc;
+        height: 200px;
+    }
+  }
